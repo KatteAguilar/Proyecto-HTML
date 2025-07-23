@@ -6,7 +6,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body {
-    background-color: rgb(254, 221, 245);
+    background-color: rgb(252, 232, 247);
     min-height: 100vh;
     } 
     .panel{ 
@@ -15,16 +15,16 @@ body {
    
 
     grid-template-areas: 
-    "cabecera"
-    "navegacion"
-    "contenido" 100%
-    "barra"
-    "pie";
+    "cabecera"50px
+    "navegacion"20px 
+    "contenido"auto
+    "barra"50px
+    "pie"20px;
 
     @media (min-width: 900px) {
         grid-template: 
         "cabecera   cabecera    cabecera" 100px
-        "navegacion navegacion  navegacion" 50px
+        "navegacion navegacion  navegacion" 80px
         "contenido  contenido   barra" 100%
         "pie        pie         pie" 50px / 50px auto auto;
     } 
@@ -33,21 +33,59 @@ body {
 .cabecera{
     background-color: rgb(115, 33, 85);
     grid-area: cabecera;
-
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.cabecera h1 { 
+    font-size: 3rem;
+    font-style: italic;
+    font-family: fantasy;
+    text-transform: p;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
 .navegacion{
-    background-color: rgb(201, 187, 214);
+    background-color: rgba(129, 2, 121, 0.405);
     grid-area: navegacion;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.menu li{
+    margin: 0 20px;
+} 
+
+.menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 5px 10px; 
+    transform: color 0.3s ease;
+}
+.menu li a:hover{ 
+    color: rgb(96, 3, 96);
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgb(251, 168, 215);
+    padding: 10px;
+    border-radius: 10px;
 }
 .contenido{
-    background-color: rgb(219, 188, 148);
+    background-color: rgba(239, 185, 167, 0.69);
     grid-area: contenido;
 }
 .barra{
-    background-color: rgb(191, 214, 255);
+    background-color: rgb(233, 213, 255);
     grid-area: barra;
 }
 .pie{ 
-    background-color: rgb(244, 251, 189);
+    background-color: rgba(251, 249, 189, 0.715);
     grid-area: pie;
 }

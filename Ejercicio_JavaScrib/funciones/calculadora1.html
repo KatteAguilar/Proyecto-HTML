@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Katteryn</title>
+    <link rel="stylesheet" href="calculadora1.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" readonly>
-        <div class="buttons">
-            <button class="number" data-value="7">7</button>
-            <button class="number" data-value="8">8</button>
-            <button class="number" data-value="9">9</button>
-            <button class="operator" data-value="+">+</button>
-            <button class="number" data-value="4">4</button>
-            <button class="number" data-value="5">5</button>
-            <button class="number" data-value="6">6</button>
-            <button class="operator" data-value="-">-</button>
-            <button class="number" data-value="1">1</button>
-            <button class="number" data-value="2">2</button>
-            <button class="number" data-value="3">3</button>
-            <button class="operator" data-value="*">*</button>
-            <button class="number" data-value="0">0</button>
-            <button class="operator" data-value="/">/</button>
-            <button id="equal" >=</button>
-            <button id="clear">C</button>
-        </div>
+    <div class="calculadora">
+        <div class="pantalla">0</div>
+        <button id="c" class="btn">C</button>
+        <button id="borrar" class="btn">←</button>
+        <button class="btn">/</button>
+        <button class="btn">*</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">-</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">+</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button id="igual" class="btn">=</button>
+        <button id="cero" class="btn">0</button>
+        <button class="btn">.</button>
+     
     </div>
+
+
+
+    <script src="./calculadora1.js"></script>
 </body>
 </html>
