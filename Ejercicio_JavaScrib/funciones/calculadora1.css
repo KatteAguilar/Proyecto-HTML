@@ -1,0 +1,58 @@
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #3498db; /* Azul más vibrante */
+    border-radius: 10px; /* Bordes más redondeados */
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#display {
+    width: 100%;
+    padding: 15px; /* Un poco más de espacio */
+    font-size: 24px; /* Texto más grande */
+    text-align: right;
+    border: none;
+    box-sizing: border-box;
+    background-color: #f2f2f2; /* Fondo gris claro */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; /* Espacio entre botones */
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none; /* Sin bordes */
+    background-color: #ecf0f1; /* Gris claro */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: #dcdde1; /* Gris más oscuro */
+}
+
+#equal {
+    background-color: #2ecc71; /* Verde más vibrante */
+    color: white;
+}
+
+#clear {
+    background-color: #e74c3c; /* Rojo más vibrante */
+    color: white;
+}
+
+/* Agrega un estilo para los botones de operación */
+.operator {
+    background-color: #95a5a6; /* Gris azulado */
+    color: white;
+}
+
+.operator:hover {
+    background-color: #7f8c8d; /* Gris azulado más oscuro */
+}

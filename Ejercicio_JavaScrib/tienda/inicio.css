@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background-color: rgb(254, 221, 245);
+    min-height: 100vh;
+    } 
+    .panel{ 
+    display: grid;
+    gap: 10px;
+   
+
+    grid-template-areas: 
+    "cabecera"
+    "navegacion"
+    "contenido" 100%
+    "barra"
+    "pie";
+
+    @media (min-width: 900px) {
+        grid-template: 
+        "cabecera   cabecera    cabecera" 100px
+        "navegacion navegacion  navegacion" 50px
+        "contenido  contenido   barra" 100%
+        "pie        pie         pie" 50px / 50px auto auto;
+    } 
+}
+
+.cabecera{
+    background-color: rgb(115, 33, 85);
+    grid-area: cabecera;
+
+}
+.navegacion{
+    background-color: rgb(201, 187, 214);
+    grid-area: navegacion;
+}
+.contenido{
+    background-color: rgb(219, 188, 148);
+    grid-area: contenido;
+}
+.barra{
+    background-color: rgb(191, 214, 255);
+    grid-area: barra;
+}
+.pie{ 
+    background-color: rgb(244, 251, 189);
+    grid-area: pie;
+}

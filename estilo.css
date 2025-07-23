@@ -4,7 +4,29 @@ body {
 section {
     margin: 20px auto;
     padding: 20px;
-    border: 2px purple;
+    border: 5px rgb(95, 2, 95);
     box-shadow: 15px 10px 20px;
     border-radius: 25px;
+}
+h1{text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+nav a {
+    color: rgba(84, 4, 146, 0.755);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover{
+    color: cadetblue;
+}
+img{
+    
+    
+}
+
+header{
+    padding:20px;
+
 }
