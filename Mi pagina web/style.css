@@ -81,8 +81,11 @@ body {
     cursor: pointer;
 }
 
+.header-info{
+    position: relative;
+}
 .header-info h1{
-    color: rosybrown;
+    color: rgb(249, 231, 170);
     text-transform: uppercase;
     font-size: 70px;
     font-weight: 800;
