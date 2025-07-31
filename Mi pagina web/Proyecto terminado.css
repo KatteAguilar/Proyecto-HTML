@@ -31,3 +31,10 @@
         .animate-fadeIn {
             animation: fadeIn 1s ease-in-out;
         }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: translateY(-5px);
+        }
