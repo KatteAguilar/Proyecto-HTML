@@ -117,7 +117,7 @@ body {
     width: 100%;
     height: auto;
 }
-.tarjeta button{
+.btnAdd{
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -128,7 +128,7 @@ body {
     transition: background 0.3s;
     width: 80%;
 }
-.tarjeta button:hover{
+.btnAdd:hover{
     background-color: greenyellow;
     color: black;
 }
